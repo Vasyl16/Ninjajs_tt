@@ -8,11 +8,21 @@ export function areObjectsEqual(
   if (keys1.length !== keys2.length) return false;
 
   for (const key of keys1) {
-    if (!obj1[key] && !obj2[key]) {
-      return true;
+    const value1 = obj1[key];
+    const value2 = obj2[key];
+
+    if (isFalsyOrEmpty(value1) && isFalsyOrEmpty(value2)) {
+      continue; // Both are considered "empty", so they're equal
     }
-    if (obj1[key] !== obj2[key]) return false;
+
+    if (value1 !== value2) {
+      return false;
+    }
   }
 
   return true;
+}
+
+function isFalsyOrEmpty(value: string | boolean | number | undefined): boolean {
+  return value === undefined || value === null || value === '';
 }
