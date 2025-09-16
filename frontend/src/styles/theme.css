@@ -1,0 +1,42 @@
+@theme {
+  --color-main-bg: var(--main-bg);
+
+  --color-main-text: var(--main-text-color);
+
+  --color-main-icon-color: var(--main-text-color);
+
+  --font-logo: var(--logo-font-family);
+
+  --color-main-button-bg: var(--button-bg);
+
+  --color-input-outline: black;
+  --color-input-text: black;
+
+  --color-input-bg: var(--input-bg);
+
+  --shadow-main: var(--box-shadow-main);
+
+  --color-dropdown-bg: var(--dropdown-bg);
+  --color-dropdown-border: var(--dropdown-border);
+  --color-dropdown-list-bg: var(--dropdown-list-bg);
+}
+
+:root {
+  --main-bg: rgb(31, 31, 31);
+  --second-bg: rgb(66, 66, 66);
+
+  --box-shadow-main: -30px -10px 70px rgba(235, 235, 235, 0.1);
+
+  --main-border-color: rgb(93, 93, 93);
+
+  --main-text-color: white;
+
+  --button-bg: rgb(243, 50, 140);
+
+  --input-bg: #dedede;
+  --input-border: transparent;
+
+  --dropdown-bg: #1f1f1f;
+  --dropdown-border: #444;
+  --dropdown-list-bg: #3a3a3a;
+}

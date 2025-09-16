@@ -1,0 +1,12 @@
+@layer utilities {
+  .container {
+    max-width: var(--main-container);
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .spin-endless {
+    animation: spin360 2s linear infinite;
+  }
+}

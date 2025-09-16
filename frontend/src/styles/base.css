@@ -1,0 +1,11 @@
+body {
+  font-family: Roboto;
+  font-weight: 400;
+  background-color: var(--main-bg);
+  color: var(--main-text-color);
+}
+
+body.enable-transitions,
+body.enable-transitions .transition-theme {
+  transition: all ease-in-out 0.5s;
+}
